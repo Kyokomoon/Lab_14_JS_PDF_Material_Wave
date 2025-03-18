@@ -1,13 +1,34 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Резюме</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="background">
+    <div class="resume-container">
+      <div class="resume">
+        <h1 contenteditable="true" class="editable" id="fullname">ФИО Кулаков Кирилл Вячеславович</h1>
+        <p contenteditable="true" class="editable" id="profession">Профессия Программист</p>
+        <section>
+          <h2>Улица BErrrr</h2>
+          <p contenteditable="true" class="editable" id="education">Место учебы СибГУТИ, 2025 год окончания</p>
+        </section>
+        <section>
+          <h2>Опыт работы 2 года</h2>
+          <p contenteditable="true" class="editable" id="work">Место работы Элтекс 2 месяца</p>
+        </section>
+        <button id="download-btn">Скачать PDF</button>
+        <p id="download-count">Кнопка нажата 0 раз</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
 </html>
